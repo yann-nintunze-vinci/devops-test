@@ -56,4 +56,10 @@ describe("Berlin Clock", () => {
 
     expect(result).toBe("RRRO");
   });
+
+  it("should return RRRR when hour is 22", () => {
+    const result = main.get5Hours(22);
+
+    expect(result).toBe("RRRR");
+  });
 });

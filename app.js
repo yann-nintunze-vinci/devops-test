@@ -15,7 +15,8 @@ class Main {
   }
 
   get5Hours(hour) {
-    return hour === 11 ? "RROO" : "RRRO";
+    const count = Math.floor(hour / 5);
+    return "R".repeat(count) + "O".repeat(4 - count);
   }
 }
 
