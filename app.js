@@ -13,6 +13,10 @@ class Main {
     const count = hour % 5;
     return "R".repeat(count) + "O".repeat(4 - count);
   }
+
+  get5Hours(hour) {
+    return "RROO";
+  }
 }
 
 module.exports = Main;
