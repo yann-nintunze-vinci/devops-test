@@ -1,6 +1,6 @@
 const Main = require("../app.js");
 
-describe("Math tests", () => {
+describe("Berlin Clock", () => {
   const main = new Main();
 
   it("should return JJ00 when minute is 22", () => {
@@ -19,5 +19,11 @@ describe("Math tests", () => {
     const result = main.getMinutesSimples(54);
 
     expect(result).toBe("JJJJ");
+  });
+
+  it("should return JJRJ0000000 when minute is 22", () => {
+    const result = main.get5Minutes(22);
+
+    expect(result).toBe("JJRJ0000000");
   });
 });
