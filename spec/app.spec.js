@@ -9,6 +9,12 @@ describe("Math tests", () => {
     expect(result).toBe("JJOO");
   });
 
+  it("should return JJJ0 when minute is 33", () => {
+    const result = main.getMinutesSimples(33);
+
+    expect(result).toBe("JJJO");
+  });
+
   it("should return JJJJ when minute is 54", () => {
     const result = main.getMinutesSimples(54);
 
