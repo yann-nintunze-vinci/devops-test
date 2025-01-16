@@ -18,6 +18,10 @@ class Main {
     const count = Math.floor(hour / 5);
     return "R".repeat(count) + "O".repeat(4 - count);
   }
+
+  getSeconds(second) {
+    return "R";
+  }
 }
 
 module.exports = Main;
