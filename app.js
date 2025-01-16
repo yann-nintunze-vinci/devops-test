@@ -1,8 +1,7 @@
 class Main {
   getMinutesSimples(minute) {
-    if (minute === 22) return "JJOO";
-    if (minute === 33) return "JJJO";
-    return "JJJJ";
+    const count = minute % 5;
+    return 'J'.repeat(count) + 'O'.repeat(4 - count);
   }
 }
 
