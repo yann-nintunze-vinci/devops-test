@@ -8,4 +8,10 @@ describe("Math tests", () => {
 
     expect(result).toBe("JJOO");
   });
+
+  it("should return JJJJ when minute is 54", () => {
+    const result = main.getMinutesSimples(54);
+
+    expect(result).toBe("JJJJ");
+  });
 });

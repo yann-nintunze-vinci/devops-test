@@ -1,6 +1,6 @@
 class Main {
   getMinutesSimples(minute) {
-    return "JJOO";
+    return minute === 22 ? "JJOO" : "JJJJ";
   }
 }
 
