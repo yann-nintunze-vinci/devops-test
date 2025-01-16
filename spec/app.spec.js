@@ -68,4 +68,10 @@ describe("Berlin Clock", () => {
 
     expect(result).toBe("R");
   });
+
+  it("should return O when hour is 59", () => {
+    const result = main.getSeconds(59);
+
+    expect(result).toBe("O");
+  });
 });
