@@ -20,7 +20,7 @@ class Main {
   }
 
   getSeconds(second) {
-    return second === 20 ? "R" : "O";
+    return second % 2 == 0 ? "R" : "O";
   }
 }
 
