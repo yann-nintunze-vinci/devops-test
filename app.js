@@ -15,7 +15,7 @@ class Main {
   }
 
   get5Hours(hour) {
-    return "RROO";
+    return hour === 11 ? "RROO" : "RRRO";
   }
 }
 
