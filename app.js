@@ -8,6 +8,10 @@ class Main {
     const count = Math.floor(minute / 5);
     return "J".repeat(count) + "O".repeat(11 - count);
   }
+
+  getHeuresSimples(heure) {
+    return "RRRR";
+  }
 }
 
 module.exports = Main;
