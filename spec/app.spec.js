@@ -28,8 +28,14 @@ describe("Berlin Clock", () => {
   });
 
   it("should return RRRR when hour is 24", () => {
-    const result = main.get5Minutes(24);
+    const result = main.getHeuresSimples(24);
 
     expect(result).toBe("RRRR");
+  });
+
+  it("should return RROO when hour is 2", () => {
+    const result = main.getHeuresSimples(2);
+
+    expect(result).toBe("RROO");
   });
 });

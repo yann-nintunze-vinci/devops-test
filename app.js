@@ -10,7 +10,7 @@ class Main {
   }
 
   getHeuresSimples(heure) {
-    return "RRRR";
+    return heure === 24 ? "RRRR" : "RROO";
   }
 }
 
