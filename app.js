@@ -5,7 +5,8 @@ class Main {
   }
 
   get5Minutes(minute) {
-    return "JJRJ0000000";
+    const count = Math.floor(minute / 5);
+    return "J".repeat(count) + "O".repeat(11 - count);
   }
 }
 
