@@ -1,5 +1,5 @@
 class Main {
-  getMinutesSimples(minute) {
+  getMinutes(minute) {
     const count = minute % 5;
     return "J".repeat(count) + "O".repeat(4 - count);
   }
@@ -9,8 +9,9 @@ class Main {
     return "J".repeat(count) + "O".repeat(11 - count);
   }
 
-  getHeuresSimples(heure) {
-    return heure === 24 ? "RRRR" : "RROO";
+  getHours(hour) {
+    const count = hour % 5;
+    return "R".repeat(count) + "O".repeat(4 - count);
   }
 }
 
